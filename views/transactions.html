@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<h1>List of transactions for account number {{accountNumber}}</h1>
+
+    <table ng-table="tableParams" class="table table-condensed table-bordered table-striped">
+        <tr ng-repeat="transaction in $data">
+            <td data-title="'Date'" sortable="'date'">
+                {{transaction.date | date : 'dd/MM/yyyy HH:mm:ss'}}</td>
+            <td data-title="'From'" sortable="'from'">
+                {{transaction.fromAccount}}</td>
+            <td data-title="'To'" sortable="'to'">
+                {{transaction.toAccount}}</td>
+            <td data-title="'Amount'" sortable="'amount'">
+                {{transaction.amount | currency}}</td>
+        </tr>
+    </table>
+	<a href="#/" class="btn btn-primary">Go back home</a>
+</div>

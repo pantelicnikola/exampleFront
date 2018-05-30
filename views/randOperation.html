@@ -1,0 +1,48 @@
+<div class="container-fluid">
+
+	<form class="form-search">
+        <div class="row">
+            <div class="form-group col-xs-4">
+              <label for="accountNumber">Account number</label>
+              <input type="text" maxlength="20" class="form-control" id="accountNumber" placeholder="Enter account number" ng-model="randDTO.accountNumber">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-4">
+              <label for="dateFrom">Date From</label>
+              <input type="text" maxlength="20" class="form-control" id="dateFrom" placeholder="Enter starting date" ng-model="randDTO.dateFrom">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-4">
+              <label for="dateTo">Date To</label>
+              <input type="text" maxlength="20" class="form-control" id="dateTo" placeholder="Enter end date" ng-model="randDTO.dateTo">
+            </div>
+        </div>
+		<div class="row">
+			<div class="form-group col-xs-4">
+	  		<button class="btn btn-primary" ng-click="randOperation()">Rarando0m</button>          
+	  	</div>
+    </form>
+
+    <div ng-if="showTable" class="container-fluid">
+        <table ng-table="tableParams" class="table table-condensed table-bordered table-striped">
+            <tr ng-repeat="temp in $data">
+                <td data-title="'Movement type'" sortable="'movementType'">
+                    {{temp.movementType}}</td>
+                <td data-title="'From'" sortable="'from'">
+                    {{temp.from}}</td>
+                <td data-title="'To'" sortable="'to'">
+                    {{temp.to}}</td>
+                <td data-title="'Date'" sortable="'date'">
+                    {{temp.date | date : 'dd/MMM/yyyy HH:mm:ss'}}</td>
+                <td data-title="'Amount'" sortable="'amount'">
+                    {{temp.amount | currency}}</td>
+            </tr>
+        </table>
+        <a href="#/" class="btn btn-primary">Go back home</a>
+    </div>
+
+    
+    
+</div>

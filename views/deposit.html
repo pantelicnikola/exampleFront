@@ -1,0 +1,29 @@
+<div class="container-fluid">
+
+	<form class="form-search">
+		
+        <div class="row">
+            <div class="form-group col-xs-4">
+              <label for="toAccount">To  Account</label>
+              <input type="text" maxlength="20" class="form-control" id="toAccount" placeholder="Enter account number" ng-model="depositDTO.toAccount">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-4">
+              <label for="amountOfTransfer">Amount Of Transfer</label>
+              <input type="text" maxlength="20" class="form-control" id="amountOfTransfer" placeholder="Enter amount to transfer" ng-model="depositDTO.amountOfTransfer">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-4">
+              <label for="reasonOfDeposit">Reason Of Deposit</label>
+              <input type="text" maxlength="20" class="form-control" id="reasonOfDeposit" placeholder="Enter a reason for deposit" ng-model="depositDTO.reasonOfDeposit">
+            </div>
+        </div>
+		<div class="row">
+			<div class="form-group col-xs-4">
+	  		<button class="btn btn-primary" ng-click="depositOperation()">Deposit</button>          
+	  	</div>
+    </form>
+    
+</div>

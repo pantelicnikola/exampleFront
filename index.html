@@ -1,0 +1,24 @@
+<html>
+
+<head>
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/ng-table.min.css">
+	<base href="/">
+</head>
+
+<body ng-app="bankApp">
+
+	<!-- Our Website Content Goes Here -->
+	<div ng-include='"templates/header.html"'></div>
+	<div ng-view></div>
+	<!--div ng-include='"templates/footer.html"'></div-->
+
+	<!-- angular script -->
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/angular-route.min.js"></script>
+	<script src="libs/ng-table.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

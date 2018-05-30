@@ -1,0 +1,20 @@
+[
+	{
+		"date":"2018-03-15T00:00:00.000Z",
+		"from":"Giuseppe Verdi",
+		"to":"Mario Rossi",
+		"amount":1285.53
+	},
+	{
+		"date":"2018-02-18T00:00:00.000Z",
+		"from":"Antonio Neri",
+		"to":"Mario Rossi",
+		"amount":356.14
+	},
+	{
+		"date":"2018-03-07T00:00:00.000Z",
+		"from":"Mario Rossi",
+		"to":"Violetta Rossi",
+		"amount":-500
+	}
+]
